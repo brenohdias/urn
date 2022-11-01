@@ -28,14 +28,16 @@ export class AppComponent {
       number: "22",
       broken: "PL",
       vice: "WALTER BRAGA",
-      img: "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000614517/foto_1534215592223.jpg"
+      img: "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000614517/foto_1534215592223.jpg",
+      imgVice: "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000614518/foto_1534215592625.jpg"
     },
     {
       name: "LUIZ INÁCIO",
       number: "13",
       broken: "PT",
       vice: "ANTONIO HAMILTON",
-      img: "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000625869/foto_1534363925445.jpg"
+      img: "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000625869/foto_1534363925445.jpg",
+      imgVice: "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000625870/foto_1534363925581.jpg"
     }
   ]
 
