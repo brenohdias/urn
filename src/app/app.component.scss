@@ -1,0 +1,142 @@
+.container{
+  text-align: center;
+  background-color: #e1e1e1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.input{
+  pointer-events: none;
+  width: 20px;
+  height: 30px;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.align{
+  margin-left: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.whiteVote{
+  padding-top: 40px;
+  font-size: 30px;
+  padding-bottom: 93px;
+}
+
+.bold{
+  margin-left: 6px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.end{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 135px;
+}
+
+.error{
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.null{
+  font-size: 25px;
+  margin-top: 25px;
+  padding-bottom: 45px;
+}
+
+.indications{
+  height: 88px;
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.margin{
+  margin-left: 60px;
+}
+
+.align2{
+  display: flex;
+  margin-top: 15px;
+}
+
+img{
+  right: 0;
+  position: absolute;
+  height: 150px;
+  width: 105px;
+  border: solid 1px black;
+}
+.cinzaEscuro{
+  top: 50%;
+  margin-top: -200px;
+  width: 250px;
+  height: 60px;
+  right: 20px;
+  position: absolute;
+}
+b{
+  position: relative;
+  top: 10px;
+}
+.preto{
+  border: solid 2px;
+  top: 50%;
+  margin-top: -135px;
+  position: absolute;
+  background-color: #444;
+  height: 300px;
+  width: 250px;
+  right: 20px;
+  margin-right: 400px;
+}
+.cinzaClaro{
+  position: absolute;
+  border: solid 1px;
+  left: 50%;
+  margin-left: -370px;
+  top: 50%;
+  margin-top: -190px;
+  position: absolute;
+  height: 360px;
+  width: 500px;
+  background-color: snow;
+}
+.cinzaEscuro{
+  background-color: #b6b5b5;
+  margin-right: 400px;
+}
+.bnt{
+  margin: 10px;
+  background-color: black;
+  color: snow;
+  border-radius: 5px;
+  height: 30px;
+  width: 50px;
+}
+.teclado2{
+  font-size: 11px;
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  color: black;
+}
+.branco{
+  height: 40px;
+  width: 75px;
+}
+.laranja{
+  height: 40px;
+  width: 75px;
+  background-color: #E67401;
+}
+.verde{
+  height: 50px;
+  width: 85px;
+  background-color: green;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Votação</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="branco">
+              <div class="cinzaClaro">
+                <div class="end">
+                  <h1>FIM!</h1>
+                </div>
+              </div>
+
+                <div  *ngIf="end" class="cinzaClaro">
+                    <img *ngIf="candidate" [src]="img">
+                    <div class="align">
+                        <p>SEU VOTO PARA</p>
+                    </div>
+
+                    <h2>PRESIDENTE:</h2>
+                    <form action="">
+                      <div *ngIf="white" class="align">
+                        <label>NÚMERO: </label>
+                        <input size="1" class="input" [value]="valueInput1" maxlength="1" type="text" readonly="readonly"/>
+                        <input size="1" class="input" [value]="valueInput2" maxlength="1" type="text" readonly="readonly"/>
+                        <div *ngIf="nullVote" class="error">
+                          <Label>NÚMERO ERRADO</Label>
+                        </div>
+                      </div>
+                      <div *ngIf="nullVote" class="null">
+                        <label><b>VOTO NULO</b></label>
+                      </div>
+                      <div *ngIf="candidate" class="align">
+                        <div class="aling2">
+                          <label>Nome:</label>
+                          <label class="bold">{{candidate}}</label>
+                        </div>
+                        <div class="align2">
+                          <label>Vice:</label>
+                          <label class="bold">{{vice}}</label>
+                        </div>
+                        <div class="align2">
+                          <label>Partido:</label>
+                          <label class="bold">{{broken}}</label>
+                        </div>
+                      </div>
+                      <div *ngIf="textWhiteVote" class="whiteVote">
+                        <label><b> VOTO EM BRANCO </b></label>
+                      </div>
+                      <div *ngIf="candidate || nullVote || textWhiteVote" class="indications">
+                        <div class="align">
+                          <p>Aperte a tecla:</p>
+                          <p class="margin"> VERDE para CONFIRMAR</p>
+                          <p class="margin"> LARANJA para CORRIGIR</p>
+                        </div>
+                      </div>
+                    </form>
+
+
+                </div>
+                <div class="cinzaEscuro">
+                    <b>JUSTIÇA<br>ELEITORAL</b>
+                </div>
+                <div class="preto">
+                    <button class="bnt click" (click)="setValue('1')">1</button>
+                    <button class="bnt click" (click)="setValue('2')">2</button>
+                    <button class="bnt click" (click)="setValue('3')">3</button>
+                    <button class="bnt click" (click)="setValue('4')">4</button>
+                    <button class="bnt click" (click)="setValue('5')">5</button>
+                    <button class="bnt click" (click)="setValue('6')">6</button>
+                    <button class="bnt click" (click)="setValue('7')">7</button>
+                    <button class="bnt click" (click)="setValue('8')">8</button>
+                    <button class="bnt click" (click)="setValue('9')">9</button>
+                    <button class="bnt click" (click)="setValue('0')">0</button>
+                    <div class="teclado2">
+                        <button class="branco  click" [disabled]="disabledBtnWhite" (click)="whiteVote()">BRANCO</button>
+                        <button class="laranja  click" (click)="clear()">CORRIGE</button>
+                        <button class="verde click" [disabled]="disabled" (click)="confirm()">CONFIRMA</button>
+                    </div>
+                </div>
+            </div>
+            <a href="resultado.html">Resultado</a>
+        </div>
+
+    </body>
+</html>
